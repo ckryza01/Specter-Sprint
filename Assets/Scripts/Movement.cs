@@ -36,6 +36,12 @@ public class Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        if (PlayerPrefs.HasKey("sensitivity"))
+        {
+            mouseSensitivity = PlayerPrefs.GetFloat("sensitivity");
+        }
+
         currentStamina = maxStamina;
         controller = GetComponent<CharacterController>();
         if (cursorLock)

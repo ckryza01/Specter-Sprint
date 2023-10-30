@@ -6,7 +6,7 @@ public class OnOpen : MonoBehaviour
 {
 
     [SerializeField] MenuManager manager;
-    [SerializeField] Menu Screen1, Screen2;
+    [SerializeField] Menu Screen1;
 
     void Start()
     {
@@ -20,8 +20,7 @@ public class OnOpen : MonoBehaviour
 
         Debug.Log("Loading");
         yield return new WaitForSeconds(4f);
-        manager.Close(Screen1);
-        manager.Open(Screen2);
+        manager.Open(Screen1);
 
     }
 
