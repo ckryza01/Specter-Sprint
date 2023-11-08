@@ -55,7 +55,7 @@ Add back the last node removed so that a path from the starter hub to every othe
 ## Step 6:
 
 We have our maze! Fill in each node with a dungeon block with the appropriate amount of doors.
-For example, here's the node in the top right,
+For example, here's the node in the top right:
 
 |          |          |     |
 |----------|----------|-----|
