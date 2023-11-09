@@ -29,6 +29,26 @@ public class WaypointFollower : MonoBehaviour
                 i = 0;
             }
         }
+        transform.LookAt(waypoints[i].transform);
         transform.position = Vector3.MoveTowards(transform.position, waypoints[i].transform.position, speed * Time.deltaTime);
+    }
+
+    public void addWaypoint(GameObject obj)
+    {
+        if (waypoints == null)
+        {
+            waypoints = new GameObject[1];
+            waypoints[0] = obj;
+        } else
+        {
+            GameObject[] newArray = new GameObject[waypoints.Length + 1];
+            for (int i = 0; i < waypoints.Length; i++)
+            {
+                newArray[i] = waypoints[i];
+            }
+
+            newArray[newArray.Length - 1] = obj;
+            waypoints = newArray;
+        }
     }
 }
