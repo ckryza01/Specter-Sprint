@@ -6,6 +6,7 @@ using TMPro;
 public class OrbCounter : MonoBehaviour
 {
     public TextMeshProUGUI orbCountText;
+    public GameObject finish;
     public int collectedOrbs = 0;
     public int totalOrbs = 0;
 
@@ -28,6 +29,7 @@ public class OrbCounter : MonoBehaviour
 
         if(collectedOrbs >= totalOrbs){
             orbCountText.text = "All Orbs Collected, ESCAPE!";
+            finish.SetActive(true);
         }
     }
     
