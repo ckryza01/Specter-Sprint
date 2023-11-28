@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6761477459107310514}
   - component: {fileID: 1478829781193976051}
   - component: {fileID: 4489644635774827266}
+  - component: {fileID: 8449927832118632543}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -165,6 +166,19 @@ MonoBehaviour:
   staminaLossRate: 10
   jumpHeight: 6
   currentStamina: 0
+--- !u!114 &8449927832118632543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373930209487593080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 104d4558392affb44b51a9e30976d041, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invincibilityTime: 10
 --- !u!1 &1575268280300134491
 GameObject:
   m_ObjectHideFlags: 0
