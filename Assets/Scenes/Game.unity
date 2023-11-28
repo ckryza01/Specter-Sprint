@@ -412,6 +412,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1287,6 +1288,7 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+
     - target: {fileID: 4380719807690173449, guid: 2b875dc6e0b7f714da62425092648622, type: 3}
       propertyPath: m_Name
       value: Orb
@@ -1510,6 +1512,7 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
+
   m_SourcePrefab: {fileID: 100100000, guid: 0b06a8e1e4539734e97bfcdcf3d875ac, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -1526,3 +1529,4 @@ SceneRoots:
   - {fileID: 527638839}
   - {fileID: 5005394725302027178}
   - {fileID: 8673875278839025684}
+
