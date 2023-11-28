@@ -11,7 +11,8 @@ public class OrbController : MonoBehaviour
         mistParticleSystem = GetComponent<ParticleSystem>();
 
     }
-    private void OnTriggerEnter(Collider other)
+
+    protected virtual void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
@@ -19,7 +20,7 @@ public class OrbController : MonoBehaviour
         }
     }
 
-    void CollectOrb()
+    protected void CollectOrb()
     {
         OrbCounter orbCounter = FindObjectOfType<OrbCounter>();
         if (orbCounter != null)
