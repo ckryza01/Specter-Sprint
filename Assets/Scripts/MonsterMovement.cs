@@ -7,7 +7,7 @@ public class MonsterMovement : MonoBehaviour
     GameObject player;
     PlayerLife playerLifeScript;
     [SerializeField] float speed = 1f;
-    [SerializeField] float attackRange = 1f;
+    [SerializeField] float attackRange = .25f;
     [SerializeField] float chaseRange = 10f;
     Animation animationComponent;
 
